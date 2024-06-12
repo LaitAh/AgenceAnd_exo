@@ -341,3 +341,181 @@
         }
     }
 }
+
+.section-infos {
+    height: 1470px;
+    background-image: url('../images/cite_fruges-image_background_3.jpg');
+    background-size: cover;
+
+    &--content {
+        position: absolute;
+        top: 0;
+        left: 120px;
+        width: 1200px;
+        padding: 0;
+    }
+
+    &--top {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    &--discover {
+        width: 400px;
+        aspect-ratio: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #fff;
+        color: #fff;
+
+        span {
+            transform: scaleX(-1);
+            font-size: 2.5em;
+            margin-top: 10px;
+        }
+
+        h3 {
+            margin-top: 25px;
+            font-size: 1.1em;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+    }
+
+    &--text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 400px;
+        aspect-ratio: 1;
+        line-height: 1.6;
+        color: #fff;
+    }
+
+    &--title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 525px;
+        cursor: pointer;
+    }
+
+    &--first,
+    &--second {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        color: #fff;
+    }
+
+    &-cite,
+    &-protagonist {
+        width: 400px;
+        padding-left: 40px;
+        font-size: 2.47em;
+        margin: 25px 0;
+        opacity: 60%;
+    }
+
+    span.arrow-cite,
+    span.arrow-protagonist {
+        font-size: 2em;
+        padding-left: 10px;
+        display: none;
+    }
+
+    .active {
+        h2 {
+            opacity: 100%;
+        }
+
+        span {
+            display: inline;
+        }
+    }
+    .section-infos-detail {
+        position: absolute;
+        top: 400px;
+        left: 799px;
+        width: 520px;
+        height: 586px;
+
+        .detail-element {
+            display: none;
+        }
+
+        .detail-content {
+            padding: 110px 120px 70px 50px;
+            background-color: #fff;
+        }
+
+        .detail-element.active {
+            display: inline;
+        }
+
+        .detail-text {
+            margin: 0;
+            padding: 0;
+            line-height: 1.86;
+        }
+
+        .detail-infos {
+            margin: 0;
+            padding: 0;
+            padding-top: 35px;
+            font-weight: bold;
+            font-style: italic;
+            font-size: 0.85em;
+            letter-spacing: 0.1px;
+            line-height: 1.56;
+        }
+
+        .detail-buttons {
+            background-color: #fff;
+            height: 95px;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            .material-symbols-outlined {
+                font-size: 1.2em;
+            }
+
+            &--more,
+            &--ticket {
+                display: block;
+                margin: 0;
+                padding: 40px 50px;
+                border: 0.5px solid #1e1e1e75;
+                text-transform: uppercase;
+                text-decoration: none;
+                font-size: 0.8em;
+                letter-spacing: 4.8px;
+                display: flex;
+                align-items: center;
+            }
+
+            &--more {
+                width: 40%;
+                border-right: none;
+                color: #399CA2;
+            }
+
+            &--ticket {
+                width: 60%;
+                color: #BE352E;
+
+                .material-symbols-outlined {
+                    transform: rotate(135deg);
+                }
+            }
+        }
+    }
+}
