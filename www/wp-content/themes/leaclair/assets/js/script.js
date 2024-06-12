@@ -35,4 +35,30 @@ document.addEventListener('DOMContentLoaded', (event) => {
         toggleSection(sectionInfosFirst, detailCite, sectionInfosSecond, detailProtagonist);
     });
 
+    // Update current year
+    const currentYearElement = document.getElementById('copyright-current-year');
+    if (currentYearElement) {
+        currentYearElement.textContent = new Date().getFullYear();
+    }
+
+    // Schedule and access toggle functionality
+    const titleSchedule = document.querySelector('.title-schedule');
+    const titleAccess = document.querySelector('.title-access');
+    const contentSchedule = document.querySelector('.content-schedule');
+    const contentAccess = document.querySelector('.content-access');
+
+    const toggleContent = (contentToShow, contentToHide, titleToShow, titleToHide) => {
+        contentToShow.classList.add('active');
+        contentToHide.classList.remove('active');
+        titleToShow.classList.add('active');
+        titleToHide.classList.remove('active');
+    };
+
+    titleSchedule.addEventListener('click', () => {
+        toggleContent(contentSchedule, contentAccess, titleSchedule, titleAccess);
+    });
+
+    titleAccess.addEventListener('click', () => {
+        toggleContent(contentAccess, contentSchedule, titleAccess, titleSchedule);
+    });
 });
