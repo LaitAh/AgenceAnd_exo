@@ -1,0 +1,142 @@
+// _sections.scss
+
+.section-top {
+    height: 1027px;
+    color: $color-white;
+    background-image: url('../images/cite_fruges-image_background_1.jpg');
+    background-size: cover;
+    position: relative;
+
+    &--nav-top {
+        @include flex-center;
+        position: absolute;
+        top: 0;
+        left: 115px;
+        font-size: 0.7em;
+        padding: 0 2em;
+    }
+
+    .nav-top--language {
+        padding: 2em;
+        cursor: pointer;
+        .active {
+            font-weight: bold;
+        }
+        .lang-fr {
+            padding-right: 1em;
+        }
+        .lang-en {
+            padding-left: 1em;
+        }
+    }
+
+    .nav-top--search-bar {
+        @include flex-center;
+        padding: 2em 0.7em;
+        form {
+            display: flex;
+        }
+        button, input {
+            border: none;
+            background-color: transparent;
+            color: $color-white;
+            cursor: pointer;
+            font-size: inherit;
+        }
+        input {
+            width: 9em;
+            &::placeholder {
+                color: $color-white;
+                opacity: 1;
+                text-transform: uppercase;
+                letter-spacing: 1.5px;
+            }
+        }
+    }
+
+    .nav-top--login-button {
+        padding: 2em;
+        font-size: 1em;
+        text-transform: uppercase;
+        background-color: transparent;
+        border: none;
+        color: $color-white;
+        @include flex-center;
+        .material-symbols-outlined {
+            text-decoration: none;
+            font-size: 1.5em;
+        }
+    }
+
+    &--nav-right {
+        position: absolute;
+        top: 115px;
+        right: 40px;
+        width: 80px;
+
+        .nav-right--buttons {
+            @include flex-center;
+            aspect-ratio: 1;
+            color: $color-white;
+            text-decoration: none;
+        }
+
+        .nav-right--burger {
+            background-image: transparent;
+            border: 2px solid $color-white;
+        }
+
+        .nav-right--tickets {
+            background-color: $color-secondary;
+            .material-symbols-outlined {
+                transform: rotate(135deg);
+            }
+        }
+
+        .nav-right--commu {
+            background-color: $color-white;
+            color: $color-secondary;
+        }
+    }
+
+    &--content {
+        position: absolute;
+        top: 200px;
+        left: 120px;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        height: 830px;
+
+        .top-content--logo {
+            background-color: $color-white;
+            width: 400px;
+            aspect-ratio: 1;
+            font-family: $font-secondary;
+            @include flex-center;
+            color: $color-secondary;
+            font-size: 9.5em;
+            letter-spacing: -5px;
+        }
+
+        .top-content--text {
+            width: 335px;
+            height: 100%;
+            border: 1px solid $color-white;
+            padding: 0.7em 2em;
+
+            h1 {
+                font-size: 2.5em;
+                line-height: 1.05;
+                font-weight: 700;
+                margin-bottom: 0;
+            }
+
+            p {
+                margin-top: 1em;
+                font-size: 1.3em;
+                line-height: 1.5;
+            }
+        }
+    }
+}

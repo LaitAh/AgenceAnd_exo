@@ -1,0 +1,16 @@
+// _base.scss
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: $font-primary;
+    color: $color-primary;
+    background-color: $color-white;
+}
+
+.page-section {
+    width: $container-width;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
