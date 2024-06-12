@@ -1,6 +1,7 @@
 // _sections.scss
 @import './variables';
 
+// Part one
 .section-top {
     height: 1027px;
     color: $color-white;
@@ -142,6 +143,7 @@
     }
 }
 
+// Part two
 .section-address {
     height: 1400px;
     background-image: url('../images/cite_fruges-image_background_2.jpg');
@@ -343,6 +345,7 @@
     }
 }
 
+// Part three
 .section-infos {
     height: 1470px;
     background-image: url('../images/cite_fruges-image_background_3.jpg');
@@ -522,6 +525,7 @@
     }
 }
 
+// Part four
 .section-librairy {
     height: 1510px;
 
@@ -647,6 +651,7 @@
     }
 }
 
+// Part five
 .section-contact {
     top: -176px;
     height: 1667px;
@@ -823,7 +828,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        color: #000;
+        color: $color-primary;
         font-size: 9.5em;
         letter-spacing: -5px;
     }
@@ -945,7 +950,7 @@
 
     .footer-links {
         position: absolute;
-        top: 1632px;
+        top: 1605px;
         left: 120px;
         width: 1200px;
         display: flex;
@@ -953,11 +958,10 @@
         font-size: 0.8em;
         .footer-link {
             text-decoration: none;
-            color: #1e1e1e;
+            color: $color-primary;
         }
     }
 }
-
 
 .section-contact--copyright {
     position: absolute;

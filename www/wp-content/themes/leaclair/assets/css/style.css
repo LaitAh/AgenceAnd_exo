@@ -761,7 +761,7 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #000;
+  color: #1e1e1e;
   font-size: 9.5em;
   letter-spacing: -5px;
 }
@@ -876,7 +876,7 @@ html, body {
 }
 .section-contact .footer-links {
   position: absolute;
-  top: 1632px;
+  top: 1605px;
   left: 120px;
   width: 1200px;
   display: flex;
