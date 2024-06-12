@@ -519,3 +519,129 @@
         }
     }
 }
+
+.section-librairy {
+    height: 1510px;
+
+    .section-librairy-title {
+        margin-top: 180px;
+        margin-bottom: 152px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-transform: uppercase;
+        font-size: 1em;
+        letter-spacing: 4.5px;
+        color: #BE352E;
+
+        .material-symbols-outlined {
+            padding-bottom: 22px;
+            font-size: 2em;
+        }
+    }
+
+    .section-library--content {
+        background-color: yellow;
+        position: absolute;
+        top: 225px;
+        left: 120px;
+    }
+
+    .content-mosaic {
+        display: flex;
+        flex-wrap: wrap;
+        width: 1600px;
+        height: 800px;
+        margin: 0 auto;
+
+        .content-mosaic-element {
+            width: 400px;
+            height: 400px;
+            box-sizing: border-box;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-content: space-between;
+            background-color: #f5f5f5;
+
+            .element-title {
+                padding: 60px 40px;
+
+                &--icon.material-symbols-outlined {
+                    display: block;
+                    margin-bottom: 30px;
+                    font-size: 2em;
+                }
+            }
+
+            &--icon.material-symbols-outlined, 
+            &-bottom, 
+            &-bottom--link .material-symbols-outlined {
+                color: #399CA2;
+            }
+
+            &-title--name {
+                font-size: 1.25em;
+            }
+
+            .element-bottom {
+                align-self: flex-end;
+                display: flex;
+                flex-direction: row;
+                padding: 30px 25px;
+
+                &-size {
+                    letter-spacing: 3.2px;
+                    font-weight: normal;
+                }
+
+                &--link .material-symbols-outlined {
+                    margin: 0;
+                    margin-left: 10px;
+                    font-size: 3em;
+                    text-decoration: none;
+                }
+            }
+
+            .element-image {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+
+        #element-1, #element-1 .material-symbols-outlined, #element-1 .element-bottom-size {
+            background-color: #399CA2;
+            color: #fff;
+        }
+
+        #element-2 .material-symbols-outlined {
+            color: #BE352E;
+        }
+
+        #element-4, #element-4 .material-symbols-outlined, #element-4 .element-bottom-size {
+            background-color: #BE352E;
+            color: #fff;
+        }
+    }
+
+    .content-title {
+        margin-top: 60px;
+        position: absolute;
+        left: calc(50% - 120px); // J'ai laissé la valeur précédente commentée, car elle semblait être une répétition de la ligne suivante.
+        left: 548px; // Si c'est intentionnel, laisse cette ligne.
+        top: 1025px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+        letter-spacing: 4.8px;
+        color: #BE352E;
+
+        .material-symbols-outlined {
+            margin-left: 13px;
+        }
+    }
+}
+
